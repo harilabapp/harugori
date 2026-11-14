@@ -1,0 +1,18 @@
+:root { --bg:#fafaf7; --fg:#1b1b1f; --sub:#6b6b73; --line:#e4e4e0; --accent:#2f6f5e; }
+@media (prefers-color-scheme: dark) { :root { --bg:#121214; --fg:#ececef; --sub:#9a9aa3; --line:#2a2a2f; --accent:#7cc4ad; } }
+* { box-sizing: border-box; }
+body { margin:0; background:var(--bg); color:var(--fg);
+  font: 16px/1.7 -apple-system, "Pretendard", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", sans-serif; }
+main { max-width:680px; margin:0 auto; padding:40px 22px 64px; }
+h1 { font-size:26px; margin:8px 0 4px; }
+h1.hero { font-size:40px; letter-spacing:-0.02em; margin-top:24px; }
+h2 { font-size:18px; margin:28px 0 6px; }
+.sub, .tag, footer { color:var(--sub); }
+.tag { font-size:18px; margin-top:0; }
+a { color:var(--accent); }
+.nav { font-size:14px; }
+ul { padding-left:20px; }
+.points li { margin:2px 0; }
+.links { margin-top:24px; }
+hr { border:0; border-top:1px solid var(--line); margin:48px 0 24px; }
+footer { font-size:13px; margin-top:40px; }
