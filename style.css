@@ -31,3 +31,11 @@ h2.sec { margin-top:48px; }
 .card p { margin:0; color:var(--sub); font-size:15px; }
 .card.accent { border-color:var(--accent); }
 .btn { display:inline-block; padding:10px 18px; border-radius:12px; background:var(--accent); color:#fff; text-decoration:none; }
+.shots { display:grid; grid-template-columns:repeat(4, 1fr); gap:14px; }
+.shots figure { margin:0; }
+.shots img { width:100%; height:auto; display:block; border-radius:16px; border:1px solid var(--line); }
+.shots figcaption { text-align:center; font-size:13px; color:var(--sub); margin-top:6px; }
+@media (max-width:640px) {
+  .shots { display:flex; overflow-x:auto; scroll-snap-type:x mandatory; gap:12px; padding-bottom:6px; }
+  .shots figure { flex:0 0 62%; scroll-snap-align:start; }
+}
